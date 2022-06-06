@@ -38,7 +38,6 @@ and last.
 
 const numbGenerator = () =>{
     let numb = [];
-    var i = 21
     for (let i = 0; i < 21; i++){
         numb.push(Math.floor(Math.random() * 10));
     }
@@ -52,7 +51,7 @@ const boomerangFinder = array => {
     let output = [];
     for (let i = 0; i < array.length; i++){
         if (array[i] === array[i+2] && array[i] !== array[i+1]){
-            //? This if statement checks if the integer at [i] is the same as the integer 2 intexes over, and also makes sure the integer one index over is not the same
+            //? This if statement checks if the integer at [i] equals the integer 2 indexes over, and also makes sure it is not equal to the integer one index over
             
             // console.log(array[i]);
             // console.log(array[i+1]);
