@@ -34,7 +34,7 @@ boomerang because the middle digit is identical to the first
 and last.
 */
 
-//? First I made a function that will create an array of 21 random numbers for the boomerangFinder function to look through. This is more for my convineice as I can avoid changing the numbers manually everytime I want to test it
+//? First I made a function that will create an array of 21 random numbers for the boomerangFinder function to look through. This is more for my convenience as I can avoid changing the numbers manually everytime I want to test it
 
 const numbGenerator = () =>{
     let numb = [];
