@@ -34,11 +34,19 @@ boomerang because the middle digit is identical to the first
 and last.
 */
 
-//? First I made an array that will have random numbers in it eveytime its inputed into the function to save me the trouble of constantly changing the numbers
+//? First I made a function that will create an array of 21 random numbers for the boomerangFinder function to look through. This is more for my convineice as I can avoid changing the numbers manually everytime I want to test it
 
-const numbers = [Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10)];
+const numbGenerator = () =>{
+    let numb = [];
+    var i = 21
+    for (let i = 0; i < 21; i++){
+        numb.push(Math.floor(Math.random() * 10));
+    }
+    return numb
+}
 
-console.log(numbers);
+console.log(numbGenerator())
+
 
 const boomerangFinder = array => {
     let output = [];
@@ -61,4 +69,4 @@ const boomerangFinder = array => {
     return output.length;
 };
 
-console.log(boomerangFinder(numbers));
+console.log(boomerangFinder(numbGenerator()));
